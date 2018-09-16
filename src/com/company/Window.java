@@ -3,13 +3,13 @@ package com.company;
 import javax.swing.*;
 
 public class Window extends JFrame {
-    Window()
-
-    {
+    Window() {
         setVisible(true);
         setBounds(120, 120, 800, 600);
         setTitle("SnakeGame");
-        setDefaultCloseOperation(WindowConstnts.EXIT_ON_CLOSE);
-        setResizeble(false);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
+        setResizable(false);
+
+        getContentPane().add(new Graphic());
     }
 }
